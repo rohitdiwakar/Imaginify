@@ -13,6 +13,14 @@ const AddTransformationTypePage = async ({ params: { type } }: SearchParamProps)
 
   const user = await getUserById(userId);
 
+  console.log("Fetched user:", user);
+
+  // if (!user) {
+  //   console.error("User not found");
+  //   redirect('/sign-in'); // Redirect to an error page or handle appropriately
+  //   return null;
+  // }
+
   return (
     <>
       <Header 
